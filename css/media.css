@@ -226,6 +226,17 @@
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    .payment__card.requis .forms{
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment__card.requis .forms .forms-info{
+        width: 100%;
+    }
+    .payment__card.requis .forms .forms-info:nth-child(2){
+        margin-top: 20px;
+    }
 }
 @media(max-width: 500px){
     .payment__card-text h3{

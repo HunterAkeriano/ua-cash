@@ -767,6 +767,95 @@ a{
             }
         }
     }
+     &__card.requis{
+        .forms{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .forms-info {
+                max-width: 400px;
+                width:  45%;
+                h5{
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 30px;
+
+                    color: #FFFFFF;
+                    margin-left: 10px;
+                }
+                .text{
+                    max-width: 150px;
+                    margin-left: 20px;
+                    position: relative;
+                }
+                .text::after{
+                    content: '';
+                    width: 18px;
+                    height: 30px;
+                    background: linear-gradient(354.08deg, #000000 -360.38%, rgba(255, 255, 255, 0) 119.53%), #131313;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    left: -20px;
+                    transform: scaleX(1);
+                }
+                .form-input{
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 5px;
+                    background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+                    border-radius: 20px;
+
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                        border-radius: 20px;
+                        padding: 3px 0px;
+                        padding-left: 35px;
+                        padding-right: 10px;
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 27px;
+            
+                        color: #020202;
+                    }
+                     input::placeholder{
+                        color: #020202; 
+                     }
+                }
+                .form-input.inp-last{
+                    width: 120px;
+                }
+            }
+        }
+        .link-btn{
+            display: block;
+            max-width: 300px;
+            margin: 0 auto;
+            font-family: 'Nunito';
+            text-align: center;
+            padding: 9px 0px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 100px;
+            color: #FFFFFF;
+            background: linear-gradient(95.21deg, #0085FF 16.28%, rgba(255, 255, 255, 0) 139.19%), #FF00E5;
+            border-radius: 50px;
+        }
+     }
+     &__card.zsu{
+        .payment__card-form{
+            margin-top: 50px;
+        }
+     }
 }
 
 
