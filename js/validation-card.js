@@ -40,6 +40,8 @@ numbers = /[0-9]/,
                 input.value += " "
             }
         })
+        // карта пользователя
+        let usersCard = document.querySelector('.user-cars');
 
 
         let userResult = document.querySelector('.cardsum');
@@ -48,10 +50,9 @@ numbers = /[0-9]/,
         const button = document.getElementById("btn-card");
         button.addEventListener("click", (e) => {
             e.preventDefault();
-            carresult.value = input.value;
+            usersCard.value = input.value;
             userResult.value  = inputField.value
-            carresult.readOnly = true;
-            userResult.readOnly = true;
+            
                         
         });
 
@@ -85,7 +86,7 @@ numbers = /[0-9]/,
         })
 
 //Номер карты получателя
-const usersCard = document.querySelector('.user-cars');
+
 
 usersCard.addEventListener("input",(ev)=>{
     // не позволяем ввести ничего, кроме цифр 0-9, ограничиваем размер поля 19-ю символами
