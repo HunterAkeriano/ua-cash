@@ -70,6 +70,7 @@
     </div>
    </section>
 
+   <!-- поиск -->
    <div class="search">
     <div class="container">
         <div class="search__input">
@@ -104,7 +105,7 @@
                          <div class="input-sum">
                             <input type="number"placeholder="Сумма" >
                          </div>
-                         <a href="#">Перевести <span class=""></span> (сумма + 7%)</a>
+                         <a href="#card">Перевести <span class=""></span> (сумма + 7%)</a>
                          <p class="text-info">
                             На нашем сервисе взымается комиссия 7% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
                          </p>
@@ -205,8 +206,104 @@
    <section class="payment">
     <div class="container">
         <!-- переводы на карту -->
-        <div class="payment__card">
+        <div class="payment__card" id="card">
+            <div class="payment__card-text">
+                <h3>Перевод с карты на карту</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="/">
+                    <div class="form">
+                        <div class="form-left">
+                            <div class="form-input-top">
+                                <input type="number" placeholder="Номер карты отправителя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input type="number" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input type="number" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input type="number" placeholder="Номер карты получателя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input type="number" placeholder="Сумма">
+                                </div>
+                            </div>
+                            <a href="#">Перевести (сумма + 7%)</a>
+                        </div>
+                    </div>
+                </form>
 
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/card.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Перевод с карты на карту</h5>
+                        <p class="text">Перевод средств с карты на карту осуществляется с помощью соответсвенных сервисов, и сохранением конфидициальности данных</p>
+                        <p class="info">На нашем сервисе взымается комиссия 7% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="payment__card phone" id="phone">
+            <div class="payment__card-text">
+                <h3>Пополнение мобильного</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="/">
+                    <div class="form">
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input type="number" placeholder="Номер карты отправителя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input type="number" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input type="number" placeholder="CVV">
+                                </div>
+                            </div>
+                            <a href="#">Перевести (сумма + 7%)</a>
+                        </div>
+                        <div class="form-left ">
+                            <div class="form-input-top">
+                                <input type="number" placeholder="Номер телефона получателя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input type="number" placeholder="Сумма">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/hone.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Быстрое пополнение счета</h5>
+                        <p class="text">Пополнение мобильного счета
+                            производиться непосредственно
+                            в оперативном порядке, средства приходят менее чем за минуту </p>
+                        <p class="info">На нашем сервисе взымается комиссия 7% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
    </section>

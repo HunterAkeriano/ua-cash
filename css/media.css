@@ -202,3 +202,36 @@
     }
     
 }
+
+/* оплата */
+@media(max-width: 860px){
+    .payment__card-form .form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment__card-form  img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .payment__card-form .form .form-left {
+        margin-top: 40px;
+    }
+    .payment__card-form .form .form-left{
+        width: 100%;
+    }
+    .payment__card-form{
+        margin-top: 50px;
+    }
+    .payment__card-info{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media(max-width: 500px){
+    .payment__card-text h3{
+        font-size: 18px;
+    }
+    .payment__card-text:after{
+        left: 0px;
+    }
+}
