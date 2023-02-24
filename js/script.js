@@ -41,3 +41,22 @@ let swiper3 = new Swiper(".swiper-container",{
         
     }
   });
+
+
+// плавный скролл
+
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const href = link.getAttribute('href');
+      const target = document.querySelector(href);
+      if (target) {
+            const offsetTop = target.offsetTop;
+          window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });  

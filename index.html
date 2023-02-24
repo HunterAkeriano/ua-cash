@@ -100,12 +100,12 @@
                          с помощью соответсвенных сервисов, 
                          и сохранением конфидициальности данных</p>
                          <div class="input-card two-text">
-                            <input type="number" placeholder="Номер карты получателя">
+                            <input class="cardcard" type="text" placeholder="Номер карты получателя" id="card-card">
                          </div>
                          <div class="input-sum">
-                            <input type="number"placeholder="Сумма" >
+                            <input type="number"placeholder="Сумма"  id="card-inp">
                          </div>
-                         <a href="#card">Перевести <span class=""></span> (сумма + 7%)</a>
+                         <a id="btn-card" href="#card" >Перевести <span class="" id="card-span">(сумма + 7%)</span> </a>
                          <p class="text-info">
                             На нашем сервисе взымается комиссия 7% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
                          </p>
@@ -216,27 +216,27 @@
                     <div class="form">
                         <div class="form-left">
                             <div class="form-input-top">
-                                <input type="number" placeholder="Номер карты отправителя">
+                                <input class="cardresult" type="sting" placeholder="Номер карты отправителя" id="validation-input-card" >
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Срок дейстсвия">
+                                    <input class="date-card" type="text" placeholder="Срок дейстсвия">
                                 </div>
                                 <div class="form-date">
-                                    <input type="number" placeholder="CVV">
+                                    <input class="card-cvv" type="password" placeholder="CVV">
                                 </div>
                             </div>
                         </div>
                         <div class="form-left top">
                             <div class="form-input-top">
-                                <input type="number" placeholder="Номер карты получателя">
+                                <input type="text" placeholder="Номер карты получателя" class="user-cars">
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Сумма">
+                                    <input class="cardsum" type="number" placeholder="Сумма">
                                 </div>
                             </div>
-                            <a href="#">Перевести (сумма + 7%)</a>
+                            <a  href="#">Перевести <span class="card-span-usr">(сумма + 7%)</span></a>
                         </div>
                     </div>
                 </form>
@@ -426,6 +426,7 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/validation-app.js"></script>
     <!--  -->
 </body>
 </html>
