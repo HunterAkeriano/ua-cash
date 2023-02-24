@@ -138,9 +138,9 @@
                                             <input type="number" placeholder="Номер карты получателя">
                                          </div>
                                          <div class="input-sum">
-                                            <input type="number"placeholder="Сумма" >
+                                            <input class="requis-input" type="number"placeholder="Сумма" >
                                          </div>
-                                         <a href="#">Перевести <span class=""></span> (сумма + 7%)</a>
+                                         <a class="requis-btn" href="#requis">Перевести <span class="requis-span">(сумма + 7%)</span> </a>
                                          <p class="text-info">
                                             На нашем сервисе взымается комиссия 7% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
                                          </p>
@@ -152,12 +152,12 @@
                                     <h5>Поддержка Армии Украины</h5>
                                     <p class="text-text">Сбор средств на поддержку украинской армии (перевод на спецсчет НБУ</p>
                                          <div class="input-card two-text" >
-                                            <input type="number" placeholder="Номер карты получателя">
+                                            <input id="bank-card-input" type="text" placeholder="Номер карты получателя">
                                          </div>
                                          <div class="input-sum">
-                                            <input type="number"placeholder="Сумма" >
+                                            <input class="zsu-input-sum"  type="number"placeholder="Сумма" >
                                          </div>
-                                         <a href="#">Перевести <span class=""></span> (сумма + 7%)</a>
+                                         <a class="zsu-btn" href="#zsu">Перевести <span class="zsu-span"> (сумма + 7%)</span></a>
                                          <p class="text-info">
                                             На нашем сервисе взымается комиссия 7% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
                                          </p>
@@ -335,16 +335,16 @@
                             <input type="text" placeholder="ФИО отправителя">
                         </div>
                         <div class="form-input">
-                            <input type="number" placeholder="Номер телефона">
+                            <input class="requis-phone" type="number" placeholder="Номер телефона">
                         </div>
                         <div class="form-input inp-last">
-                            <input class="inp-last" type="number" placeholder="Сумма">
+                            <input  class="inp-last-sim" type="number" placeholder="Сумма">
                         </div>
                     </div>
                 </div>
             </form>
 
-            <a class="link-btn" href="#">Перевести (сумма + 7%)</a>
+            <a class="link-btn" href="#">Перевести <span class="link-span">Перевести (сумма + 7%)</span> </a>
 
             <div class="payment__card-info">
                 <div class="block-img">
@@ -358,7 +358,7 @@
             </div>
         </div>
 
-        <div class="payment__card phone zsu">
+        <div class="payment__card phone " id="zsu">
             <div class="payment__card-text">
                 <h3>Поддержка ЗСУ</h3>
             </div>
@@ -368,14 +368,14 @@
                     <div class="form">
                         <div class="form-left top">
                             <div class="form-input-top">
-                                <input type="number" placeholder="Номер карты отправителя">
+                                <input class="inp-zsu" type="text"   placeholder="Номер карты отправителя">
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Сумма">
+                                    <input class="zsu-sum" type="number" placeholder="Сумма">
                                 </div>
                             </div>
-                            <a href="#">Перевести (сумма + 7%)</a>
+                            <a href="#">Перевести <span class="result-zsu">(сумма + 7%)</span> </a>
                         </div>
                     </div>
                 </form>
@@ -428,6 +428,8 @@
     <script src="js/script.js"></script>
     <script src="js/validation-card.js"></script>
     <script src="js/validation-phone.js"></script>
+    <script src="js/validation-requis.js"></script>
+    <script src="js/validation-zsu.js"></script>
     <!--  -->
 </body>
 </html>

@@ -18,7 +18,7 @@ inputField.addEventListener('input', () => {
 //  валидацию на карточку
 const input = document.getElementById('card-card'),
 numbers = /[0-9]/,
-            regExp = /[0-9]{4}/
+ regExp = /[0-9]{4}/
 
             // добавляем слушатель события на инпут
         input.addEventListener("input",(ev)=>{
@@ -167,5 +167,6 @@ phoneCVV.addEventListener('input',   () => {
         phoneCVV.value = phoneCVV.value.slice(0, 3);
     }
   });
+
 
 
