@@ -39,6 +39,7 @@ dd {
 }
 
 body {
+    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     font-family: 'Nunito', sans-serif;
@@ -811,6 +812,7 @@ a{
         .forms{
             display: flex;
             justify-content: space-between;
+            flex-direction: row-reverse;
             margin-top: 50px;
             .forms-info {
                 max-width: 400px;
@@ -1052,8 +1054,4 @@ a{
             }
         }
     }
-}
-
-.footer-error{
-    margin-top: 50px;
 }

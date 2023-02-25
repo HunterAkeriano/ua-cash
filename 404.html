@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- стили -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/btn-reg.css">
     <link rel="stylesheet" href="css/media.css">
-    <!--  -->
-
-
-    <link rel="shortcut icon" type="image/svg" href="img/favicon/favicon.svg"/>
-    <title>Ua Cash | Авторизация</title>
+    <title>UA-Cash | Ошибка</title>
 </head>
 <body>
+
     <div id="page-preloader" class="preloader">
     
         <div class="loader">
@@ -24,8 +20,9 @@
             </div>
             <span id="load_perc">0%</span></div>
        </div>
-
+    
     <div class="page">
+
         <header class="header">
             <div class="container">
                 <div class="header__content">
@@ -40,7 +37,7 @@
                     <!-- ccылки -->
                     <nav class="header__content-nav">
                         <a href="index.html">Главная</a>
-                        <a href="index.html#posugi">Услуги</a>
+                        <a href="#posugi">Услуги</a>
                         <a href="#">О нас</a>
                         <a href="#">Поддержка</a>
                     </nav>
@@ -58,12 +55,10 @@
             <div class="container">
                 <div class="content__text">
                     <h1><span> UaCash </span> - Лучший помощник</h1>
-                    <p>Мы открылись чтобы доказать что
-                        моментальные переводы 
-                        существуют!</p>
+                    <p>Извините, но вы попали на не ведомый баг или ошибку!</p>
                 </div>
                 <div class="content__btn">
-                    <a class="one" href="index.html#posugi">Услуги</a>
+                    <a class="one" href="#posugi">Услуги</a>
                     <a class="two" href="#">Подробнее о сайте</a>
                 </div>
                 
@@ -71,7 +66,6 @@
            </section>
 
 
-           <!-- вход -->
            <section class="reg">
             <div class="reg__left">
                
@@ -80,24 +74,25 @@
                 <div class="reg__container">
                     <div class="forms">
         
+                        <!-- форма для регистрации -->
                     
-                     <form action="php/handlers/hand_butt.php" method="POST">
-                        <h3>Вход</h3>
+                    <form action="/">
+                        <h3>Зарегистрироваться</h3>
                         <div class="inp">
-                            <input name="sign_in_login" type="email" placeholder="e-mail">
+                            <input name="sign_up_login" type="email" placeholder="e-mail">
                         </div>
                         <div class="inp">
-                            <input name="sign_in_password" type="password" placeholder="Пароль">
+                            <input  name="sign_up_password" type="password" placeholder="Пароль">
                         </div>
         
         
                         <!-- для формы заменить ссылку на кнопку,
                         делаю как костыль для показа -->
                         <div class="btn">
-                            <a name="sign_in_button" href="auth.html">Вход</a>
                             <a name="sign_up_button" href="registration.html">Зарегистрироваться</a>
-                            
+                            <a name="sign_in_button" href="au">Вход</a>
                         </div>
+                        
                     </form>
                 </div>
         
@@ -105,17 +100,17 @@
             </div>
            </section>
 
-           <footer class="footer">
+           <footer class="footer footer-error">
             <div class="container">
                 <div class="footer__top">
                     <h5>UACASH</h5>
-                    <a href="index.html#posugi">Услуги</a>
+                    <a href="#posugi">Услуги</a>
                 </div>
                 <div class="footer__content">
                     <nav class="nav__link">
                         <a href="index.html">Главная</a>
                         <a href="https://t.me/uacash_news" target="_blank">Новости</a>
-                        <a href="https://t.me/uacash_public" target="_blank">Сообщество</a>
+                       <a href="https://t.me/uacash_public" target="_blank">Сообщество</a>
                         <a href="#">О нас</a>
                     </nav>
                     <nav class="nav__link">
@@ -127,8 +122,10 @@
                 </div>
             </div>
            </footer>
+
     </div>
-  <script src="js/script.js"></script> 
-  <script src="js/preloader.js"></script> 
+
+<script src="js/script.js"></script>
+<script src="js/preloader.js"></script>
 </body>
 </html>

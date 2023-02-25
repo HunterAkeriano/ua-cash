@@ -39,6 +39,7 @@ dd {
 }
 
 body {
+    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     font-family: 'Nunito', sans-serif;
@@ -1052,8 +1053,4 @@ a{
             }
         }
     }
-}
-
-.footer-error{
-    margin-top: 50px;
 }
