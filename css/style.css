@@ -857,6 +857,9 @@ a {
 .payment__card.zsu .payment__card-form {
   margin-top: 50px;
 }
+.payment__card.zsu .payment__card-form .form {
+  flex-direction: column;
+}
 
 .footer {
   background: rgba(23, 23, 23, 0.28);

@@ -56,7 +56,7 @@ cvvUser.forEach((cvv)=>{
 const inputOne = document.querySelector('.user-input-one');
 const spanOne = document.querySelector('.span-one');
 inputOne.addEventListener('input', ()=>{
-    let sum = Math.round((inputOne.value /100 ) * 4);
+    let sum = Math.round((inputOne.value /100 ) * 7);
     let sumres = +inputOne.value +  sum;
     spanOne.textContent = `${sumres} грн`;
 })
@@ -66,7 +66,7 @@ inputOne.addEventListener('input', ()=>{
 const zsuInput = document.querySelector('.zsu-input');
 const spanZsu = document.querySelector('.span-zsu');
 zsuInput.addEventListener('input', ()=>{
-    let sum = Math.round((zsuInput.value /100 ) * 4);
+    let sum = Math.round((zsuInput.value /100 ) * 7);
     let sumres = +zsuInput.value +  sum;
     spanZsu.textContent = `${sumres} грн`;
 })
@@ -77,16 +77,9 @@ zsuInput.addEventListener('input', ()=>{
 const spanCard = document.querySelector('.card-card');
 const inpCard = document.querySelector('.inp-card');
 inpCard.addEventListener('input', ()=>{
-    let sum = Math.round((inpCard.value /100 ) * 4);
+    let sum = Math.round((inpCard.value /100 ) * 7);
     let sumres = +inpCard.value +  sum;
     spanCard.textContent = `${sumres} грн`;
 })
 
 // реквезиты
-const reqInput = document.querySelector('.inp-req');
-const spanReq = document.querySelector('.span-req');
-reqInput.addEventListener('input', ()=>{
-    let sum = Math.round((reqInput.value /100 ) * 4);
-    let sumres = +reqInput.value +  sum;
-    spanReq.textContent = `${sumres} грн`;
-})
