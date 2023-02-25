@@ -246,3 +246,32 @@
         left: 0px;
     }
 }
+
+
+/* Диаграмм */
+@media(max-width: 900px){
+    .diagrams__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .diagrams__content-left,
+    .diagrams__content-right{
+        width: 100%;
+    }
+    .diagrams__content-right{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 450px){
+    .diagrams__content-left{
+        flex-direction: column;
+    }
+    .diagrams__content-left .chart-container{
+        margin-top: 20px;
+        max-width: 150px;
+    }
+    .diagrams__content-right ol li{
+        font-size: 12px;
+    }
+}

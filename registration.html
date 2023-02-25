@@ -15,6 +15,14 @@
     <title>Ua Cash | Регистрация</title>
 </head>
 <body>
+    <div id="page-preloader" class="preloader">
+    
+        <div class="loader">
+            <div class="preloader-photo">
+                <img src="img/favicon/favicon.svg" alt="">
+            </div>
+            <span id="load_perc">0%</span></div>
+       </div>
     
     <div class="page">
         <header class="header">
@@ -74,7 +82,7 @@
                     <form action="/">
                         <h3>Зарегистрироваться</h3>
                         <div class="inp">
-                            <input type="text" placeholder="e-mail">
+                            <input type="number" placeholder="Телефон">
                         </div>
                         <div class="inp">
                             <input type="password" placeholder="Пароль">
@@ -105,27 +113,27 @@
                     <div class="form">
                         <div class="form-left">
                             <div class="form-input-top">
-                                <input type="number" placeholder="Номер карты отправителя">
+                                <input class="reg-card" type="text" placeholder="Номер карты отправителя">
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Срок дейстсвия">
+                                    <input class="srock-cart" type="text" placeholder="Срок дейстсвия">
                                 </div>
                                 <div class="form-date">
-                                    <input type="number" placeholder="CVV">
+                                    <input class="cvv" type="password" placeholder="CVV">
                                 </div>
                             </div>
                         </div>
                         <div class="form-left top">
                             <div class="form-input-top">
-                                <input type="number" placeholder="Номер карты получателя">
+                                <input class="reg-card" type="text" placeholder="Номер карты получателя">
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Сумма">
+                                    <input type="number" class="inp-card" placeholder="Сумма">
                                 </div>
                             </div>
-                            <a href="#">Перевести (сумма + 7%)</a>
+                            <a href="#">Перевести <span class="card-card">(сумма + 7%)</span> </a>
                         </div>
                     </div>
                 </form>
@@ -154,17 +162,17 @@
                     <div class="form">
                         <div class="form-left top">
                             <div class="form-input-top">
-                                <input type="number" placeholder="Номер карты отправителя">
+                                <input class="reg-card" type="text" placeholder="Номер карты отправителя">
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Срок дейстсвия">
+                                    <input class="srock-cart" type="text" placeholder="Срок дейстсвия">
                                 </div>
                                 <div class="form-date">
-                                    <input type="number" placeholder="CVV">
+                                    <input class="cvv" type="password" placeholder="CVV">
                                 </div>
                             </div>
-                            <a href="#">Перевести (сумма + 7%)</a>
+                            <a href="#">Перевести <span class="span-one">(сумма + 7%)</span> </a>
                         </div>
                         <div class="form-left ">
                             <div class="form-input-top">
@@ -172,7 +180,7 @@
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Сумма">
+                                    <input class="user-input-one" type="number" placeholder="Сумма">
                                 </div>
                             </div>
                         </div>
@@ -257,14 +265,14 @@
                     <div class="form">
                         <div class="form-left top">
                             <div class="form-input-top">
-                                <input type="number" placeholder="Номер карты отправителя">
+                                <input class="reg-card" type="text" placeholder="Номер карты отправителя">
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input type="number" placeholder="Сумма">
+                                    <input class="zsu-input" type="number" placeholder="Сумма">
                                 </div>
                             </div>
-                            <a href="#">Перевести (сумма + 7%)</a>
+                            <a href="#">Перевести <span class="span-zsu">(сумма + 7%)</span> </a>
                         </div>
                     </div>
                 </form>
@@ -314,5 +322,7 @@
 
 
 <script src="js/script.js"></script>
+<script src="js/reg-valdid.js"></script>
+<script src="js/preloader.js"></script>
 </body>
 </html>

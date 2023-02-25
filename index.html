@@ -18,6 +18,15 @@
     <title>Ua Cash</title>
 </head>
 <body>
+    <!-- preloader -->
+   <div id="page-preloader" class="preloader">
+    
+    <div class="loader">
+        <div class="preloader-photo">
+            <img src="img/favicon/favicon.svg" alt="">
+        </div>
+        <span id="load_perc">0%</span></div>
+   </div>
     
     <div class="page">
 
@@ -35,8 +44,8 @@
 
                     <!-- ccылки -->
                     <nav class="header__content-nav">
-                        <a href="#">Главная</a>
-                        <a href="#">Каталог</a>
+                        <a href="index.html">Главная</a>
+                        <a href="posugi">Каталог</a>
                         <a href="#">О нас</a>
                         <a href="#">Поддержка</a>
                     </nav>
@@ -63,7 +72,7 @@
                 существуют!</p>
         </div>
         <div class="content__btn">
-            <a class="one" href="#">Каталог услуг</a>
+            <a class="one" href="#posugi">Каталог услуг</a>
             <a class="two" href="#">Подробнее о сайте</a>
         </div>
         
@@ -81,7 +90,7 @@
    </div>
 
 
-   <section class="swiper">
+   <section class="swiper" id="posugi">
     <div class="container">
         <div class="swiper__text">
             <h2>Услуги сервиса</h2>
@@ -180,11 +189,12 @@
         <div class="reg__container">
             <div class="forms">
 
+                <!-- форма для регистрации -->
             
             <form action="/">
                 <h3>Зарегистрироваться</h3>
                 <div class="inp">
-                    <input type="text" placeholder="e-mail">
+                    <input type="number" placeholder="Телефон">
                 </div>
                 <div class="inp">
                     <input type="password" placeholder="Пароль">
@@ -255,6 +265,8 @@
             
         </div>
 
+        <!-- переводы на телефон -->
+        <!-- тут блок просто перевернутый в стилях -->
         <div class="payment__card phone" id="phone">
             <div class="payment__card-text">
                 <h3>Пополнение мобильного</h3>
@@ -306,6 +318,8 @@
             
         </div>
 
+
+        <!-- переводы по реквезитам -->
         <div class="payment__card phone requis" id="requis">
             <div class="payment__card-text">
                 <h3>Перевод по реквизитам</h3>
@@ -357,6 +371,9 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- поддержка зсу -->
 
         <div class="payment__card phone " id="zsu">
             <div class="payment__card-text">
@@ -430,6 +447,7 @@
     <script src="js/validation-phone.js"></script>
     <script src="js/validation-requis.js"></script>
     <script src="js/validation-zsu.js"></script>
+    <script src="js/preloader.js"></script>
     <!--  -->
 </body>
 </html>

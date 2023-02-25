@@ -16,6 +16,15 @@
 </head>
 <body>
 
+    <div id="page-preloader" class="preloader">
+    
+        <div class="loader">
+            <div class="preloader-photo">
+                <img src="img/favicon/favicon.svg" alt="">
+            </div>
+            <span id="load_perc">0%</span></div>
+       </div>
+
     <div class="page">
          <!-- шапка сайта -->
          <header class="header">
@@ -71,6 +80,46 @@
    </section>
 
 
+   <!-- диаграмма для бека -->
+   <section class="diagrams">
+    <div class="container">
+        <div class="diagrams__content">
+            <div class="diagrams__content-left">
+                <div class="chart-container">
+                    <h5>Card To Card</h5>
+                    <canvas id="chart1"></canvas>
+                  </div>
+                  <div class="chart-container">
+                    <h5>Paymount to Phone</h5>
+                    <canvas id="chart2"></canvas>
+                  </div>
+                  <div class="chart-container">
+                    <h5>Paymount  Requisites</h5>
+                    <canvas id="chart3"></canvas>
+                  </div>
+                  <div class="chart-container">
+                    <h5>Support ЗСУ</h5>
+                    <canvas id="chart4"></canvas>
+                  </div>
+            </div>
+            <div class="diagrams__content-right">
+                <h5>Последние операции</h5>
+                <ol>
+                    <li>
+                        <span class="done"> Успешно </span>: Перевод на карту 4441 **** **** 2930 : Время 14:31
+                    </li>
+                    <li>
+                        <span class="none"> Провал </span>: Перевод на карту 4441 **** **** 2930 : Время 14:31
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+
+
    <footer class="footer">
     <div class="container">
         <div class="footer__top">
@@ -98,6 +147,9 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/diagrams.js"></script>
+    <script src="js/preloader.js"></script>
 </body>
 </html>

@@ -56,6 +56,35 @@ a {
   padding: 0 15px;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 9999;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+.preloader .loader {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  animation: 1s spin infinite linear;
+  font-size: 22px;
+}
+
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .header {
   padding: 30px 0px;
   position: fixed;
@@ -893,4 +922,75 @@ a {
 }
 .footer__content .nav__link a:hover:before {
   transform: scaleX(1);
+}
+
+.diagrams {
+  margin-top: 50px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.diagrams__content {
+  display: flex;
+  justify-content: space-between;
+}
+.diagrams__content-left {
+  display: flex;
+  width: 48%;
+  background: #101010;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  padding: 20px 0px;
+}
+.diagrams__content-left .chart-container {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+.diagrams__content-left .chart-container h5 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.diagrams__content-left canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+.diagrams__content-right {
+  width: 50%;
+  background: #101010;
+  border-radius: 7px;
+  padding: 20px;
+}
+.diagrams__content-right h5 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.diagrams__content-right ol {
+  margin: 0;
+  padding: 10px;
+}
+.diagrams__content-right ol li {
+  margin: 10px 0px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.diagrams__content-right ol li .done {
+  color: #3DFF39;
+}
+.diagrams__content-right ol li .none {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
