@@ -37,6 +37,7 @@ dd {
 }
 
 body {
+  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-family: "Nunito", sans-serif;
@@ -573,7 +574,7 @@ a {
   line-height: 27px;
   color: white;
 }
-.reg__right .reg__container button {
+.reg__right .reg__container a {
   display: block;
   font-family: "Nunito";
   font-style: normal;
@@ -587,8 +588,6 @@ a {
   max-width: 270px;
   text-align: center;
   margin-top: 100px;
-  border: 0;
-  cursor: pointer;
 }
 .reg__right .reg__container p {
   font-family: "Nunito";
@@ -1000,8 +999,4 @@ a {
 }
 .diagrams__content-right ol li .none {
   color: red;
-}
-
-.footer-error {
-  margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230225183606.css.map */
