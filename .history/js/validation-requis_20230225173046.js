@@ -2,7 +2,7 @@ const requisInput = document.querySelector('.requis-input');
 const requisSpan = document.querySelector('.requis-span');
 
 requisInput.addEventListener('input', () => {
-    let sum = Math.round((requisInput.value /100 ) * 4);
+    let sum = Math.round((requisInput.value /100 ) * 7);
     let sumres = +requisInput.value +  sum;
     requisSpan.textContent = `${sumres} грн`;
   });
@@ -20,7 +20,7 @@ requisBtn.addEventListener('click',  ()=>{
 });
 
 requisInpt.addEventListener('input', () => {
-    let sum = Math.round((requisInpt.value /100 ) * 4);
+    let sum = Math.round((requisInpt.value /100 ) * 7);
     let sumres = +requisInpt.value +  sum;
     linkSpan.textContent = `${sumres} грн`;
   });

@@ -1,0 +1,5 @@
+.reg__right .reg__container .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

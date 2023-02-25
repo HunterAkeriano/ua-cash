@@ -1,0 +1,15 @@
+.reg__right .reg__container .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.reg__right .reg__container .btn a{
+    margin-top: 0;
+}
+.reg__right .reg__container .btn a:nth-child(2){
+    background: #1b1a1a;
+    max-width: 250px;
+    width: 100%;
+}

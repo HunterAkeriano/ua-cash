@@ -28,7 +28,7 @@ let inputZsu = document.getElementById("bank-card-input"),
 const zsuSum = document.querySelector('.zsu-input-sum');
 const zsuSpan = document.querySelector('.zsu-span');
 zsuSum.addEventListener('input', () => {
-    let sum = Math.round((zsuSum.value /100 ) * 4);
+    let sum = Math.round((zsuSum.value /100 ) * 7);
     let sumres = +zsuSum.value +  sum;
     zsuSpan.textContent = `${sumres} грн`;
   }); 
@@ -46,7 +46,7 @@ zsuBtn.addEventListener('click',  ()=>{
 });
 
 zsuSums.addEventListener('input', () => {
-    let sum = Math.round((zsuSums.value /100 ) * 4);
+    let sum = Math.round((zsuSums.value /100 ) * 7);
     let sumres = +zsuSums.value +  sum;
     resultZsu.textContent = `${sumres} грн`;
   }); 

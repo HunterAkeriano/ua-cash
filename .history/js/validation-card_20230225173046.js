@@ -9,7 +9,7 @@ const output = document.getElementById('card-span');
 
 // вычесление процентов и записание их в кнопку
 inputField.addEventListener('input', () => {
-    let sum = Math.round((inputField.value /100 ) * 4);
+    let sum = Math.round((inputField.value /100 ) * 7);
     let sumres = +inputField.value +  sum;
     output.textContent = `${sumres} грн`;
     userSpan.textContent =  `${sumres} грн`;
@@ -58,7 +58,7 @@ numbers = /[0-9]/,
 
         let userSpan = document.querySelector('.card-span-usr');
         userResult.addEventListener('input', () => {
-            let sum = Math.round((userResult.value / 100 ) * 4);
+            let sum = Math.round((userResult.value / 100 ) * 7);
             let result = +userResult.value + sum;
             userSpan.textContent = `${result} грн`;
             

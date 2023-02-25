@@ -58,7 +58,7 @@ numbers = /[0-9]/,
 
         let userSpan = document.querySelector('.card-span-usr');
         userResult.addEventListener('input', () => {
-            let sum = Math.round((userResult.value / 100 ) * 4);
+            let sum = Math.round((userResult.value / 100 ) * 7);
             let result = +userResult.value + sum;
             userSpan.textContent = `${result} грн`;
             

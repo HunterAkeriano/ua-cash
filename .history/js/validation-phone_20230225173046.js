@@ -13,7 +13,7 @@ const phoneSum = document.querySelector('.phone-sum');
 const phoneSpan = document.querySelector('.phone-span');
 
 phoneSum.addEventListener('input', () => {
-    let sum = Math.round((phoneSum.value /100 ) * 4);
+    let sum = Math.round((phoneSum.value /100 ) * 7);
     let sumres = +phoneSum.value +  sum;
     phoneSpan.textContent = `${sumres} грн`;
     userSpans.textContent = `${sumres} грн`;
@@ -32,7 +32,7 @@ btnPhone.addEventListener('click', ()=>{
     userPhoneSum.value = phoneSum.value;
 });
 userPhoneSum.addEventListener('input', () => {
-    let sum = Math.round((userPhoneSum.value /100 ) * 4);
+    let sum = Math.round((userPhoneSum.value /100 ) * 7);
     let sumres = +userPhoneSum.value +  sum;
     userSpans.textContent = `${sumres} грн`;
   });
