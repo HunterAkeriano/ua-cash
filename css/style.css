@@ -316,6 +316,7 @@ a {
 }
 
 .swiper {
+  overflow: hidden;
   margin-top: 70px;
 }
 .swiper__text {
@@ -511,6 +512,7 @@ a {
 
 .reg {
   display: flex;
+  overflow: hidden;
   margin-top: 100px;
   height: 800px;
   overflow: hidden;
@@ -597,6 +599,7 @@ a {
 }
 
 .payment {
+  overflow: hidden;
   margin-top: 100px;
 }
 .payment input:focus {

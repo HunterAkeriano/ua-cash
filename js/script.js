@@ -21,8 +21,11 @@ function openMenu(){
     }
 }
 
-// свайпер
-let swiper3 = new Swiper(".swiper-container",{
+
+
+// Обрабатываем изменение размеров окна
+window.addEventListener('load', function() {
+  var swiper = new Swiper('.swiper-container', {
     spaceBetween: 20,
     centerSlides: 'true',
     fade: true,
@@ -41,6 +44,28 @@ let swiper3 = new Swiper(".swiper-container",{
         
     }
   });
+
+  if (window.innerWidth < 970) {
+    swiper.init(); // показываем свайпер на мобильных устройствах
+  } else {
+    swiper.destroy(); // скрываем свайпер на десктопах
+  }
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 970) {
+      swiper.init();
+    } else {
+      swiper.destroy();
+    }
+  });
+});
+
+
+
+
+
+
+
 
 
 // плавный скролл

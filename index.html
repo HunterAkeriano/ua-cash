@@ -90,14 +90,14 @@
    </div>
 
 
-   <section class="swiper" id="posugi">
+   <section class="swiper swiper-palnsh" id="posugi">
     <div class="container">
         <div class="swiper__text">
             <h2>Услуги сервиса</h2>
         </div>
 
         
-            <div class="swiper-container ">
+            <div class="swiper-container swiper-planshet">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide one">
                     <div class="img-block">
@@ -112,7 +112,7 @@
                             <input class="cardcard" type="text" placeholder="Номер карты получателя" id="card-card">
                          </div>
                          <div class="input-sum">
-                            <input type="number"placeholder="Сумма"  id="card-inp">
+                            <input class="max-sum" type="number" max="5000" placeholder="Сумма"  id="card-inp">
                          </div>
                          <a id="btn-card" href="#card" >Перевести <span class="" id="card-span">(сумма + 7%)</span> </a>
                          <p class="text-info">
@@ -130,7 +130,7 @@
                                     <input class="phone-inp" type="number" maxlength="11" placeholder="Номер телефона получателя">
                                  </div>
                                  <div class="input-sum">
-                                    <input class="phone-sum" type="number"placeholder="Сумма" >
+                                    <input class="phone-sum max-sum" type="number"placeholder="Сумма" >
                                  </div>
                                  <a class="btn-phone" href="#phone">Перевести <span  class="phone-span">(сумма + 7%)</span> </a>
                                  <p class="text-info">
@@ -147,7 +147,8 @@
                                             <input type="number" placeholder="Номер карты получателя">
                                          </div>
                                          <div class="input-sum">
-                                            <input class="requis-input" type="number"placeholder="Сумма" >
+                                            
+                                            <input class="requis-input max-sum" type="number"placeholder="Сумма" >
                                          </div>
                                          <a class="requis-btn" href="#requis">Перевести <span class="requis-span">(сумма + 7%)</span> </a>
                                          <p class="text-info">
@@ -164,7 +165,7 @@
                                             <input id="bank-card-input" type="text" placeholder="Номер карты получателя">
                                          </div>
                                          <div class="input-sum">
-                                            <input class="zsu-input-sum"  type="number"placeholder="Сумма" >
+                                            <input class="zsu-input-sum max-sum"  type="number"placeholder="Сумма" >
                                          </div>
                                          <a class="zsu-btn" href="#zsu">Перевести <span class="zsu-span"> (сумма + 7%)</span></a>
                                          <p class="text-info">
@@ -176,6 +177,8 @@
         </div>
     </div>
    </section>
+   
+
 
 
 
@@ -243,7 +246,7 @@
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input class="cardsum" type="number" placeholder="Сумма">
+                                    <input class="cardsum max-sum" type="number" placeholder="Сумма">
                                 </div>
                             </div>
                             <a  href="#">Перевести <span class="card-span-usr">(сумма + 7%)</span></a>
@@ -295,7 +298,7 @@
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input class="user-phone-sum" type="number" placeholder="Сумма">
+                                    <input class="user-phone-sum max-sum" type="number" placeholder="Сумма">
                                 </div>
                             </div>
                         </div>
@@ -352,7 +355,7 @@
                             <input class="requis-phone" type="number" placeholder="Номер телефона">
                         </div>
                         <div class="form-input inp-last">
-                            <input  class="inp-last-sim" type="number" placeholder="Сумма">
+                            <input  class="inp-last-sim max-sum" type="number" placeholder="Сумма">
                         </div>
                     </div>
                 </div>
@@ -389,7 +392,7 @@
                             </div>
                             <div class="form-input-bottom">
                                 <div class="form-date">
-                                    <input class="zsu-sum" type="number" placeholder="Сумма">
+                                    <input class="zsu-sum max-sum" type="number" placeholder="Сумма">
                                 </div>
                             </div>
                             <a href="#">Перевести <span class="result-zsu">(сумма + 7%)</span> </a>
@@ -425,14 +428,14 @@
         <div class="footer__content">
             <nav class="nav__link">
                 <a href="index.html">Главная</a>
-                <a href="#">Новости</a>
-                <a href="#">Сообщество</a>
+                <a href="https://t.me/uacash_news" target="_blank">Новости</a>
+               <a href="https://t.me/uacash_public" target="_blank">Сообщество</a>
                 <a href="#">О нас</a>
             </nav>
             <nav class="nav__link">
                 <a href="index.html">Поддержка </a>
                 <a href="#">Договор</a>
-                <a href="#">Дизайн</a>
+                <a href="https://t.me/lvkhd" target="_blank">Дизайн</a>
                 <a href="#">Безопасность</a>
             </nav>
         </div>
@@ -442,12 +445,14 @@
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/maks-sum.js"></script>
     <script src="js/script.js"></script>
     <script src="js/validation-card.js"></script>
     <script src="js/validation-phone.js"></script>
     <script src="js/validation-requis.js"></script>
     <script src="js/validation-zsu.js"></script>
     <script src="js/preloader.js"></script>
+    
     <!--  -->
 </body>
 </html>

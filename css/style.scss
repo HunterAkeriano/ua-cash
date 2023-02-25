@@ -323,7 +323,7 @@ a{
 }
 
 .swiper{
-    
+    overflow: hidden;
     margin-top: 70px;
     &__text{
         position: relative;
@@ -526,9 +526,11 @@ a{
 }
 
 
+
 // регистрация
 .reg{
     display: flex;
+    overflow: hidden;
     // justify-content: space-between;
     margin-top: 100px;
     // align-items: center;
@@ -626,6 +628,7 @@ a{
 // payments
 
 .payment{
+    overflow: hidden;
     margin-top: 100px;
     input:focus{
         border: 0;
