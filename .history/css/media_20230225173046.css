@@ -275,12 +275,3 @@
         font-size: 12px;
     }
 }
-
-/* курс валют */
-
-@media(max-width: 410px){
-    .dollars__content{
-        flex-direction: column;
-        align-items: center;
-    }
-}

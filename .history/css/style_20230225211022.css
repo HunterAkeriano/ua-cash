@@ -175,17 +175,8 @@ a {
   opacity: 1;
 }
 
-.dollars {
-  pointer-events: none;
-  margin-top: 150px;
-}
-.dollars__content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .content {
-  margin-top: 50px;
+  margin-top: 200px;
 }
 .content__text {
   position: relative;
@@ -596,8 +587,6 @@ a {
   max-width: 270px;
   text-align: center;
   margin-top: 100px;
-  border: 0;
-  cursor: pointer;
 }
 .reg__right .reg__container p {
   font-family: "Nunito";
@@ -1013,4 +1002,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230225211022.css.map */

@@ -181,11 +181,10 @@ a{
     opacity: 1;
 }
 .dollars{
-    pointer-events: none;
     margin-top: 150px;
     &__content{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 }
 .content{
