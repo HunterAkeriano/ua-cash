@@ -21,6 +21,7 @@ fetch(url)
   })
   .catch(error => console.error(error));
 
+
   function displayTime() {
     const date = new Date();
     const hours = date.getHours();

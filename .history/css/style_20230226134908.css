@@ -182,16 +182,6 @@ a {
 .dollars__content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.dollars__content .dol-block div {
-  display: flex;
-  align-items: center;
-}
-.dollars__content .dol-block div img {
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
 }
 
 .content {
@@ -624,9 +614,9 @@ a {
   line-height: 30px;
   color: #FFFFFF;
 }
-.reg__right .reg__container h6 {
-  margin-top: 20px;
-  color: #5e5b5b;
+
+.repassword h3 {
+  font-size: 20px;
 }
 
 .payment {
@@ -1034,4 +1024,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230226134908.css.map */

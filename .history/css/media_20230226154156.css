@@ -283,7 +283,4 @@
         flex-direction: column;
         align-items: center;
     }
-    .dollars__content span{
-        font-size: 13px;
-    }
 }

@@ -1,6 +1,7 @@
 const url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 const usdCode = 840; // Код доллара по ISO 4217
 const eurCode = 978; // Код евро по ISO 4217
+const rubCode = 643; // Код рубля по ISO 4217
 
 fetch(url)
   .then(response => response.json())
@@ -13,11 +14,17 @@ fetch(url)
     const purchaseRateEur = eur.rate.toFixed(2);
     const saleRateEur = (eur.rate + 0.5).toFixed(2); // добавляем дельту в 50 копеек для получения курса продажи
 
+    const rub = data.find(currency => currency.r030 === rubCode);
+    const purchaseRateRub = rub.rate.toFixed(2);
+    const saleRateRub = (rub.rate + 0.5).toFixed(2); // добавляем дельту в 50 копеек для получения курса продажи
+
     const outputUsd = `Покупка: ${purchaseRateUsd} грн / Продажа: ${saleRateUsd} грн`;
     const outputEur = `Покупка: ${purchaseRateEur} грн / Продажа: ${saleRateEur} грн`;
+    const outputRub = `Покупка: ${purchaseRateRub} грн / Продажа: ${saleRateRub} грн`;
     
     document.getElementById('usd-rate').textContent = outputUsd;
     document.getElementById('eur-rate').textContent = outputEur;
+    document.getElementById('rub-rate').textContent = outputRub;
   })
   .catch(error => console.error(error));
 
