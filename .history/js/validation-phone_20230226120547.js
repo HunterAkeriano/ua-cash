@@ -34,16 +34,11 @@ const userPhoneSum = document.querySelector('.user-phone-sum');
 
 btnPhone.addEventListener('click', ()=>{
     userInput.value = phoneInput.value;
-    userSpans.textContent = `${phoneSum.value} ₴`;
+    userSpans.textContent = `${phoneSum.value} грн`;
     userPhoneSum.value = phoneSum.value;
 });
 userPhoneSum.addEventListener('input', () => {
-  const value = userPhoneSum.value.trim();
-  if (value) {
-    let sum = (+value / 100) * 2.5;
-    let sumres = +value + sum + 3;
-    userSpans.textContent = `${sumres.toFixed(2)} ₴`;
-  } else {
-    userSpans.textContent = '0 ₴';
-  }
-});
+    let sum = (userPhoneSum.value /100 ) * 2.5;
+    let sumres = +userPhoneSum.value +  sum + 3;
+    userSpans.textContent = `${sumres} грн`;
+  });

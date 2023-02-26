@@ -89,9 +89,6 @@ inpCard.addEventListener('input', ()=>{
     let sum = 0;
     if (inpCard.value) {
         sum = (inpCard.value / 100) * 2.5;
-    }else{
-        spanCard.textContent = "0 ₴";
-        return;
     }
     let sumres = +inpCard.value + sum + 3;
     spanCard.textContent = `${sumres.toFixed(2)} ₴`;
@@ -100,13 +97,8 @@ inpCard.addEventListener('input', ()=>{
 // реквезиты
 const reqInput = document.querySelector('.inp-req');
 const spanReq = document.querySelector('.span-req');
-reqInput.addEventListener('input', () => {
-    const inputVal = reqInput.value;
-    if (!inputVal) {
-      spanReq.textContent = '0 ₴';
-      return;
-    }
-    const sum = (inputVal / 100) * 2.5;
-    const sumres = +inputVal + sum + 3;
-    spanReq.textContent = `${sumres.toFixed(2)} ₴`;
-  });
+reqInput.addEventListener('input', ()=>{
+    let sum = Math.round((reqInput.value /100 ) * 4);
+    let sumres = +reqInput.value +  sum;
+    spanReq.textContent = `${sumres} грн`;
+})

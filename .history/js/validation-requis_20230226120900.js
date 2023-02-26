@@ -25,15 +25,10 @@ requisBtn.addEventListener('click',  ()=>{
 });
 
 requisInpt.addEventListener('input', () => {
-  const value = requisInpt.value.trim();
-  if (value) {
-    let sum = (+value / 100) * 2.5;
-    let sumres = +value + sum + 3;
-    linkSpan.textContent = `${sumres.toFixed(2)} ₴`;
-  } else {
-    linkSpan.textContent = '0 ₴';
-  }
-});
+    let sum = Math.round((requisInpt.value /100 ) * 4);
+    let sumres = +requisInpt.value +  sum;
+    linkSpan.textContent = `${sumres} грн`;
+  });
 
 // number phone
 const numberPhone = document.querySelector('.requis-phone');

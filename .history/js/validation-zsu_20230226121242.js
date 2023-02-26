@@ -54,8 +54,8 @@ zsuBtn.addEventListener('click',  ()=>{
 zsuSums.addEventListener('input', () => {
     const value = zsuSums.value.trim();
     if (value) {
-      let sum = (+value / 100) * 2.5;
-      let sumres = +value + sum + 3;
+      let sum = (+value / 100) * 4;
+      let sumres = +value + sum;
       resultZsu.textContent = `${sumres.toFixed(2)} ₴`;
     } else {
       resultZsu.textContent = '0 ₴';

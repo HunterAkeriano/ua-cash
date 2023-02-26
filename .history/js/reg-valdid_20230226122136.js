@@ -103,10 +103,10 @@ const spanReq = document.querySelector('.span-req');
 reqInput.addEventListener('input', () => {
     const inputVal = reqInput.value;
     if (!inputVal) {
-      spanReq.textContent = '0 ₴';
+      spanReq.textContent = '';
       return;
     }
     const sum = (inputVal / 100) * 2.5;
     const sumres = +inputVal + sum + 3;
-    spanReq.textContent = `${sumres.toFixed(2)} ₴`;
+    spanReq.textContent = `${sumres.toFixed(2)} грн`;
   });

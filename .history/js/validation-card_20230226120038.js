@@ -10,13 +10,13 @@ const output = document.getElementById('card-span');
 inputField.addEventListener('input', () => {
     const value = inputField.value.trim();
     if (value) {
-      let sum = (+value / 100) * 2.5;
+      let sum = Math.round((+value / 100) * 2.5);
       let sumres = +value + sum + 3;
-      output.textContent = `${sumres.toFixed(2)} ₴`;
-      userSpan.textContent = `${sumres.toFixed(2)} ₴`;
+      output.textContent = `${sumres} грн`;
+      userSpan.textContent = `${sumres} грн`;
     } else {
-      output.textContent = '0 ₴';
-      userSpan.textContent = '0 ₴';
+      output.textContent = '0 грн';
+      userSpan.textContent = '0 грн';
     }
   });
 

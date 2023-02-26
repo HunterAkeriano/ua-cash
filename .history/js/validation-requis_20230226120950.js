@@ -29,9 +29,9 @@ requisInpt.addEventListener('input', () => {
   if (value) {
     let sum = (+value / 100) * 2.5;
     let sumres = +value + sum + 3;
-    linkSpan.textContent = `${sumres.toFixed(2)} ₴`;
+    linkSpan.textContent = `${sumres.toFixed(2)} грн`;
   } else {
-    linkSpan.textContent = '0 ₴';
+    linkSpan.textContent = '0 грн';
   }
 });
 

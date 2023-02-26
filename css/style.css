@@ -582,7 +582,7 @@ a {
   line-height: 27px;
   color: white;
 }
-.reg__right .reg__container button {
+.reg__right .reg__container button, .reg__right .reg__container a {
   display: block;
   font-family: "Nunito";
   font-style: normal;

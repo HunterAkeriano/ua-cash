@@ -6,18 +6,13 @@ const output = document.getElementById('card-span');
 // валидированная карточка
 
 
+
 // вычесление процентов и записание их в кнопку
 inputField.addEventListener('input', () => {
-    const value = inputField.value.trim();
-    if (value) {
-      let sum = (+value / 100) * 2.5;
-      let sumres = +value + sum + 3;
-      output.textContent = `${sumres.toFixed(2)} ₴`;
-      userSpan.textContent = `${sumres.toFixed(2)} ₴`;
-    } else {
-      output.textContent = '0 ₴';
-      userSpan.textContent = '0 ₴';
-    }
+    let sum = Math.round((inputField.value /100 ) * 4);
+    let sumres = +inputField.value +  sum;
+    output.textContent = `${sumres} грн`;
+    userSpan.textContent =  `${sumres} грн`;
   });
 
 //  валидацию на карточку
@@ -63,15 +58,10 @@ numbers = /[0-9]/,
 
         let userSpan = document.querySelector('.card-span-usr');
         userResult.addEventListener('input', () => {
-            const value = userResult.value.trim();
-            if (value) {
-              let sum = ((+value) / 100) * 2.5;
-              let results = sum + 3;
-              let result = +value + results;
-              userSpan.textContent = `${result.toFixed(2)} ₴`;
-            } else {
-              userSpan.textContent = '0 ₴';
-            }
+            let sum = Math.round((userResult.value / 100 ) * 2.5) + 3;
+            let result = +userResult.value + sum;
+            userSpan.textContent = `${result } грн`;
+            
           });
 
 

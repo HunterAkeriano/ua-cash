@@ -48,19 +48,15 @@ const zsuSums = document.querySelector('.zsu-sum');
 zsuBtn.addEventListener('click',  ()=>{
     inpZsu.value = inputZsu.value;
     zsuSums.value = zsuSum.value;
-    resultZsu.textContent = `${zsuSums.value} ₴`;
+    resultZsu.textContent = `${zsuSums.value} грн`;
 });
 
 zsuSums.addEventListener('input', () => {
-    const value = zsuSums.value.trim();
-    if (value) {
-      let sum = (+value / 100) * 2.5;
-      let sumres = +value + sum + 3;
-      resultZsu.textContent = `${sumres.toFixed(2)} ₴`;
-    } else {
-      resultZsu.textContent = '0 ₴';
-    }
-  });
+    let sum = Math.round((zsuSums.value /100 ) * 4);
+    let sumres = +zsuSums.value +  sum;
+    resultZsu.textContent = `${sumres} грн`;
+  }); 
+
 
 
   inpZsu.addEventListener("input", (ev)=>{

@@ -71,13 +71,13 @@ const spanZsu = document.querySelector('.span-zsu');
 zsuInput.addEventListener('input', () => {
     let inputValue = zsuInput.value;
     if (!inputValue) {
-      spanZsu.textContent = '0 ₴';
+      spanZsu.textContent = '';
       return;
     }
     
     let sum = (inputValue / 100) * 2.5;
     let sumRes = +inputValue + sum + 3;
-    spanZsu.textContent = `${sumRes.toFixed(2)} ₴`;
+    spanZsu.textContent = `${sumRes.toFixed(2)} грн`;
   });
 
 // карта на карту
@@ -86,27 +86,16 @@ zsuInput.addEventListener('input', () => {
 const spanCard = document.querySelector('.card-card');
 const inpCard = document.querySelector('.inp-card');
 inpCard.addEventListener('input', ()=>{
-    let sum = 0;
-    if (inpCard.value) {
-        sum = (inpCard.value / 100) * 2.5;
-    }else{
-        spanCard.textContent = "0 ₴";
-        return;
-    }
-    let sumres = +inpCard.value + sum + 3;
-    spanCard.textContent = `${sumres.toFixed(2)} ₴`;
-});
+    let sum = Math.round((inpCard.value /100 ) * 4);
+    let sumres = +inpCard.value +  sum;
+    spanCard.textContent = `${sumres} грн`;
+})
 
 // реквезиты
 const reqInput = document.querySelector('.inp-req');
 const spanReq = document.querySelector('.span-req');
-reqInput.addEventListener('input', () => {
-    const inputVal = reqInput.value;
-    if (!inputVal) {
-      spanReq.textContent = '0 ₴';
-      return;
-    }
-    const sum = (inputVal / 100) * 2.5;
-    const sumres = +inputVal + sum + 3;
-    spanReq.textContent = `${sumres.toFixed(2)} ₴`;
-  });
+reqInput.addEventListener('input', ()=>{
+    let sum = Math.round((reqInput.value /100 ) * 4);
+    let sumres = +reqInput.value +  sum;
+    spanReq.textContent = `${sumres} грн`;
+})
