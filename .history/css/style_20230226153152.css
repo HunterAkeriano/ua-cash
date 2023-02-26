@@ -184,15 +184,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.dollars__content .dol-block div {
-  display: flex;
-  align-items: center;
-}
-.dollars__content .dol-block div img {
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
-}
 
 .content {
   margin-top: 50px;
@@ -595,16 +586,9 @@ a {
 .reg__right .reg__container .sec {
   max-width: 300px;
   width: 100%;
-  margin: 0 auto;
 }
 .reg__right .reg__container .sec input {
   padding: 10px;
-}
-.reg__right .reg__container .sec input::-moz-placeholder {
-  text-align: center;
-}
-.reg__right .reg__container .sec input::placeholder {
-  text-align: center;
 }
 .reg__right .reg__container button {
   display: block;
@@ -810,10 +794,6 @@ a {
 .payment__card.phone .payment__card-form .form .form-left.top {
   margin-top: 50px;
 }
-.payment__card.phone .payment__card-form .form a {
-  margin: 0 auto;
-  margin-top: 40px;
-}
 .payment__card.requis .forms {
   display: flex;
   justify-content: space-between;
@@ -880,39 +860,6 @@ a {
 .payment__card.requis .forms .forms-info .form-input.inp-last {
   width: 120px;
 }
-.payment__card.requis .forms .forms-info .form-input-top {
-  padding: 2px;
-  width: 100%;
-  padding: 5px;
-  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
-  border-radius: 20px;
-  margin-top: 20px;
-}
-.payment__card.requis .forms .forms-info .form-input-top input {
-  width: 100%;
-  border-radius: 20px;
-  border: 0;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 5px 0px;
-  color: #000000;
-  padding-left: 10px;
-}
-.payment__card.requis .forms .forms-info .form-input-top input::-moz-placeholder {
-  text-align: center;
-  color: #000000;
-}
-.payment__card.requis .forms .forms-info .form-input-top input::placeholder {
-  text-align: center;
-  color: #000000;
-}
-.payment__card.requis .forms .forms-info .form-input-top input:focus {
-  outline: 0;
-  border: 0;
-}
 .payment__card.requis .link-btn {
   display: block;
   max-width: 300px;
@@ -934,10 +881,6 @@ a {
 }
 .payment__card.zsu .payment__card-form .form {
   flex-direction: column;
-}
-.payment__card.zsu .payment__card-form .form a {
-  margin: 0 auto;
-  margin-top: 40px;
 }
 
 .footer {
@@ -1082,4 +1025,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230226153152.css.map */

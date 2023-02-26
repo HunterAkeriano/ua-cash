@@ -842,10 +842,6 @@ a{
                 .form-left.top{
                     margin-top: 50px;
                 }
-                a{
-                    margin: 0 auto;
-                    margin-top: 40px;
-                }
             }
         }
     }
@@ -914,37 +910,6 @@ a{
                 .form-input.inp-last{
                     width: 120px;
                 }
-                .form-input-top{
-                    padding: 2px;
-                    width: 100%;
-                    padding: 5px;
-                    background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
-                    border-radius: 20px;
-                    margin-top: 20px;
-                    input{
-                        width: 100%;
-                        border-radius: 20px;
-                        border: 0;
-                        font-family: 'Nunito';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 22px;
-                        padding: 5px 0px;
-                        color: #000000;
-                        padding-left: 10px;
-
-                    } 
-                     input::placeholder{
-                        text-align: center;
-                        color: #000000;
-                    }
-                    input:focus{
-                        outline: 0;
-                        border: 0;
-                    }
-                }
-
             }
         }
         .link-btn{
@@ -969,10 +934,6 @@ a{
             margin-top: 50px;
             .form{
                 flex-direction: column;
-                a{
-                    margin: 0 auto;
-                   margin-top: 40px;
-                }
             }
         }
      }
