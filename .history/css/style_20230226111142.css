@@ -582,14 +582,7 @@ a {
   line-height: 27px;
   color: white;
 }
-.reg__right .reg__container .sec {
-  max-width: 300px;
-  width: 100%;
-}
-.reg__right .reg__container .sec input {
-  padding: 10px;
-}
-.reg__right .reg__container button {
+.reg__right .reg__container button, .reg__right .reg__container a {
   display: block;
   font-family: "Nunito";
   font-style: normal;
@@ -1020,4 +1013,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230226111142.css.map */

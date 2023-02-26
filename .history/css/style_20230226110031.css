@@ -184,9 +184,6 @@ a {
   justify-content: space-between;
 }
 
-.content {
-  margin-top: 50px;
-}
 .content__text {
   position: relative;
   margin-left: 25px;
@@ -581,13 +578,6 @@ a {
   font-size: 20px;
   line-height: 27px;
   color: white;
-}
-.reg__right .reg__container .sec {
-  max-width: 300px;
-  width: 100%;
-}
-.reg__right .reg__container .sec input {
-  padding: 10px;
 }
 .reg__right .reg__container button {
   display: block;
@@ -1020,4 +1010,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230226110031.css.map */
