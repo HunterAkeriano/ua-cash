@@ -587,7 +587,7 @@ a {
   width: 100%;
 }
 .reg__right .reg__container .sec input {
-  padding: 10px;
+  padding: 10px 0px;
 }
 .reg__right .reg__container button {
   display: block;
@@ -613,10 +613,6 @@ a {
   font-size: 22px;
   line-height: 30px;
   color: #FFFFFF;
-}
-.reg__right .reg__container h6 {
-  margin-top: 20px;
-  color: #5e5b5b;
 }
 
 .payment {
@@ -1024,4 +1020,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230226124404.css.map */

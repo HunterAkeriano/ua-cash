@@ -614,9 +614,9 @@ a {
   line-height: 30px;
   color: #FFFFFF;
 }
-.reg__right .reg__container h6 {
-  margin-top: 20px;
-  color: #5e5b5b;
+
+.repassword h3 {
+  font-size: 20px;
 }
 
 .payment {
@@ -1024,4 +1024,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230226134831.css.map */

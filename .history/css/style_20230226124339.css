@@ -586,9 +586,6 @@ a {
   max-width: 300px;
   width: 100%;
 }
-.reg__right .reg__container .sec input {
-  padding: 10px;
-}
 .reg__right .reg__container button {
   display: block;
   font-family: "Nunito";
@@ -613,10 +610,6 @@ a {
   font-size: 22px;
   line-height: 30px;
   color: #FFFFFF;
-}
-.reg__right .reg__container h6 {
-  margin-top: 20px;
-  color: #5e5b5b;
 }
 
 .payment {
@@ -1024,4 +1017,4 @@ a {
 
 .footer-error {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230226124339.css.map */
