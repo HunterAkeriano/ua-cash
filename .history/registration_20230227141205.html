@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"/>
+    
+
+    <!-- стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/btn-reg.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--  -->
+
+    <link rel="shortcut icon" type="image/svg" href="img/favicon/favicon.svg"/>
+    <title>Ua Cash | Регистрация</title>
+</head>
+<body>
+    <div id="page-preloader" class="preloader">
+    
+        <div class="loader">
+            <div class="preloader-photo">
+                <img src="img/favicon/Favicon.png" alt="">
+            </div>
+            <span id="load_perc">0%</span></div>
+       </div>
+    
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+
+                    <!-- burger -->
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <!-- ccылки -->
+                    <nav class="header__content-nav">
+                        <a href="index.html">Главная</a>
+                        <a href="index.html#posugi">Услуги</a>
+                        <a href="about.html#info">О нас</a>
+                        <a href="#">Поддержка</a>
+                    </nav>
+
+                    <!-- авторизация -->
+                    <div class="header__content-auth">
+                        <a href="auth.html">Личный кабинет</a>
+                        <img src="img/header/ava.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="dollars">
+            <div class="container">
+                <div class="dollars__content">
+                    <div class="dol-date"><span id="date-date-date"></span></div>
+                    <div class="dol-block">
+                        <!-- значки тут заменить -->
+                        <div>
+                            <img src="img/icons/usa.png" alt="">
+                        <span id="usd-rate"></span>
+                        </div>
+                         <div>
+                        <img src="img/icons/eu.png" alt="">
+                        <span id="eur-rate"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="content__text">
+                    <h1><span> UaCash </span> - Лучший помощник</h1>
+                    <p>Мы открылись чтобы доказать что
+                        моментальные переводы 
+                        существуют!</p>
+                </div>
+                <div class="content__btn">
+                    <a class="one" href="index.html#posugi">Услуги</a>
+                    <a class="two" href="about.html#info">Подробнее о сайте</a>
+                </div>
+                
+            </div>
+           </section>
+
+           <!-- регистрация -->
+           <section class="reg">
+            <div class="reg__left">
+               
+            </div>
+            <div class="reg__right">
+                <div class="reg__container">
+                    <div class="forms">
+        
+                    
+                        <form action="php/handlers/hand_butt.php" method="POST">
+                            <h3>Зарегистрироваться</h3>
+                            <div class="inp">
+                                <input name="sign_up_login" type="email" placeholder="e-mail" required>
+                            </div>
+                            <div class="inp">
+                                <input  name="sign_up_password" type="password" placeholder="Пароль" required>
+                            </div>
+                            <div class="inp sec">
+                                <input name="code_verb"  name="sign_up_password" type="text" placeholder="Секретное слово" required>
+                            </div>
+            
+            
+                            <!-- для формы заменить ссылку на кнопку,
+                            делаю как костыль для показа -->
+                            <div class="btn">
+                                <button name="sign_up_button" type="submit">Зарегистрироваться</button>
+                                <button name="sign_in_button" type="submit">Вход</button>
+                            </div>
+                            
+                        </form>
+                </div>
+        
+                </div>
+            </div>
+           </section>
+
+           <!-- пеймент -->
+   <section class="payment">
+    <div class="container">
+        <!-- переводы на карту -->
+        <div class="payment__card" id="card">
+            <div class="payment__card-text">
+                <h3>Перевод с карты на карту</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="php/handlers/hand_butt.php" method="POST">
+                    <div class="form">
+                        <div class="form-left">
+                            <div class="form-input-top">
+                                <input class="reg-card" type="text" placeholder="Номер карты отправителя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="srock-cart card-date" type="text" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input class="cvv" type="password" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input class="reg-card" type="text" placeholder="Номер карты получателя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input type="number" class="inp-card max-sum" placeholder="Сумма">
+                                </div>
+                            </div>
+                            <a href="#">Перевести <span class="card-card">(сумма + 4%)</span> </a>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/card.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Перевод с карты на карту</h5>
+                        <p class="text">Перевод средств с карты на карту осуществляется с помощью соответсвенных сервисов, и сохранением конфидициальности данных</p>
+                        <p class="info">На нашем сервисе взымается комиссия 4% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="payment__card phone" id="phone">
+            <div class="payment__card-text">
+                <h3>Пополнение мобильного</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="php/handlers/hand_butt.php" method="POST">
+                    <div class="form">
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input class="reg-card" type="text" placeholder="Номер карты отправителя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="srock-cart card-date" type="text" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input class="cvv" type="password" placeholder="CVV">
+                                </div>
+                            </div>
+                            <a href="#">Перевести <span class="span-one">(сумма + 4%)</span> </a>
+                        </div>
+                        <div class="form-left ">
+                            <div class="form-input-top">
+                                <input type="number" placeholder="Номер телефона получателя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="user-input-one max-sum" type="number" placeholder="Сумма">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/hone.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Быстрое пополнение счета</h5>
+                        <p class="text">Пополнение мобильного счета
+                            производиться непосредственно
+                            в оперативном порядке, средства приходят менее чем за минуту </p>
+                        <p class="info">На нашем сервисе взымается комиссия 4% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="payment__card phone requis" id="requis">
+            <div class="payment__card-text">
+                <h3>Перевод по реквизитам</h3>
+            </div>
+            <form action="php/handlers/hand_butt.php" method="POST">
+                <div class="forms">
+                    <div class="forms-info">
+                        <div class="text">
+                            <h5>Получатель</h5>
+                            
+                        </div>
+                        <div class="form-input">
+                            <input type="number" placeholder="Введите ЕГРПОУ или РНУКПН">
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="Введите Название получателя">
+                        </div>
+                        <div class="form-input">
+                            <input type="number" placeholder="Введите счет IBAN">
+                        </div>
+                    </div>
+                    <div class="forms-info">
+                        <div class="text">
+                            <h5>Отправитель</h5>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="ФИО отправителя">
+                        </div>
+                        <div class="form-input">
+                            <input type="number" placeholder="Номер телефона">
+                        </div>
+                        <div class="form-input-top">
+                            <input class="inp-zsu reg-card" type="text" placeholder="Номер карты отправителя">
+                        </div>
+                        <div class="form-input inp-last">
+                            <input class="inp-last max-sum inp-req" type="number" placeholder="Сумма">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <a class="link-btn" href="#"><span class="span-req"> Перевести (сумма + 4%)</span></a>
+
+            <div class="payment__card-info">
+                <div class="block-img">
+                    <img src="img/payment/requs.png" alt="">
+                </div>
+                <div class="block-text">
+                    <h5>Перевод по реквизитам</h5>
+                    <p class="text">Моментальный перевод непосредственно по реквзитам в оперативном порядке в соотвествии с нормами  </p>
+                    <p class="info">На нашем сервисе взымается комиссия 4% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment__card phone zsu">
+            <div class="payment__card-text">
+                <h3>Поддержка ЗСУ</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="php/handlers/hand_butt.php" method="POST">
+                    <div class="form">
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input class="reg-card" type="text" placeholder="Номер карты отправителя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="date-phone card-date" type="text" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input class="phone-cvv" type="password" placeholder="CVV">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-left ">
+                            <div class="form-input-bottom">
+                                <div class="form-date" style="width: 100%;">
+                                    <input class="zsu-input max-sum" type="number" placeholder="Сумма">
+                                </div>
+                            </div>
+                            <a href="#">Перевести <span class="span-zsu">(сумма + 4%)</span> </a>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/zsu.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Поддержка Армии Украины</h5>
+                        <p class="text">Сбор средств на поддержку украинской армии (перевод на спецсчет НБУ) </p>
+                        <p class="info">На нашем сервисе взымается комиссия 4% + 5uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   </section>
+
+
+   <!-- footer -->
+
+   <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <h5>UACASH</h5>
+            <a href="index.html#posugi">Услуги</a>
+        </div>
+        <div class="footer__content">
+            <nav class="nav__link">
+                <a href="index.html">Главная</a>
+                <a href="https://t.me/uacash_news" target="_blank">Новости</a>
+                <a href="https://t.me/uacash_public" target="_blank">Сообщество</a>
+                <a href="about.html#info">О нас</a>
+            </nav>
+            <nav class="nav__link">
+                <a href="index.html">Поддержка </a>
+                <a href="#">Договор</a>
+                <a href="https://t.me/lvkhd" target="_blank">Дизайн</a>
+                <a href="#">Безопасность</a>
+            </nav>
+        </div>
+    </div>
+   </footer>
+    </div>
+
+
+<script src="js/script.js"></script>
+<script src="js/maks-sum.js"></script>
+<script src="js/reg-valdid.js"></script>
+<script src="js/pattern-date.js"></script>
+<script src="js/dollars.js"></script>
+<script src="js/preloader.js"></script>
+</body>
+</html>

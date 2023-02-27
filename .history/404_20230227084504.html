@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/btn-reg.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>UA-Cash | Ошибка</title>
+</head>
+<body>
+
+    <div id="page-preloader" class="preloader">
+    
+        <div class="loader">
+            <div class="preloader-photo">
+                <img src="img/favicon/Favicon.png" alt="">
+            </div>
+            <span id="load_perc">0%</span></div>
+       </div>
+    
+    <div class="page">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+
+                    <!-- burger -->
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <!-- ccылки -->
+                    <nav class="header__content-nav">
+                        <a href="index.html">Главная</a>
+                        <a href="#posugi">Услуги</a>
+                        <a href="#">О нас</a>
+                        <a href="#">Поддержка</a>
+                    </nav>
+
+                    <!-- авторизация -->
+                    <div class="header__content-auth">
+                        <a href="auth.html">Личный кабинет</a>
+                        <img src="img/header/ava.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="dollars">
+            <div class="container">
+                <div class="dollars__content">
+                    <div class="dol-date"><span id="date-date-date"></span></div>
+                    <div class="dol-block">
+                        <!-- значки тут заменить -->
+                        <div>
+                            <img src="img/icons/usa.png" alt="">
+                        <span id="usd-rate"></span>
+                        </div>
+                         <div>
+                        <img src="img/icons/eu.png" alt="">
+                        <span id="eur-rate"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+         <section class="input-block">
+            <div class="container">
+
+                <div class="block-input">
+                    <input type="text">
+                </div>
+
+            </div>
+         </section>
+
+
+        <section class="content">
+            <div class="container">
+                <div class="content__text">
+                    <h1><span> UaCash </span> - Лучший помощник</h1>
+                    <p>Извините, но вы попали на не ведомый баг или ошибку!</p>
+                </div>
+                <div class="content__btn">
+                    <a class="one" href="#posugi">Услуги</a>
+                    <a class="two" href="#">Подробнее о сайте</a>
+                </div>
+                
+            </div>
+           </section>
+
+
+           <section class="reg">
+            <div class="reg__left">
+               
+            </div>
+            <div class="reg__right">
+                <div class="reg__container">
+                    <div class="forms">
+        
+                        <!-- форма для регистрации -->
+                    
+                        <form action="php/handlers/hand_butt.php" method="POST">
+                            <h3>Зарегистрироваться</h3>
+                            <div class="inp">
+                                <input name="sign_up_login" type="email" placeholder="e-mail" required>
+                            </div>
+                            <div class="inp">
+                                <input  name="sign_up_password" type="password" placeholder="Пароль" required>
+                            </div>
+                            <div class="inp sec">
+                                <input name="code_verb"  name="sign_up_password" type="text" placeholder="Секретное слово" required>
+                            </div>
+            
+            
+                            <!-- для формы заменить ссылку на кнопку,
+                            делаю как костыль для показа -->
+                            <div class="btn">
+                                <button name="sign_up_button" type="submit">Зарегистрироваться</button>
+                                <button name="sign_in_button" type="submit">Вход</button>
+                            </div>
+                            
+                        </form>
+                </div>
+        
+                </div>
+            </div>
+           </section>
+
+           <footer class="footer footer-error">
+            <div class="container">
+                <div class="footer__top">
+                    <h5>UACASH</h5>
+                    <a href="#posugi">Услуги</a>
+                </div>
+                <div class="footer__content">
+                    <nav class="nav__link">
+                        <a href="index.html">Главная</a>
+                        <a href="https://t.me/uacash_news" target="_blank">Новости</a>
+                       <a href="https://t.me/uacash_public" target="_blank">Сообщество</a>
+                        <a href="#">О нас</a>
+                    </nav>
+                    <nav class="nav__link">
+                        <a href="index.html">Поддержка </a>
+                        <a href="#">Договор</a>
+                        <a href="https://t.me/lvkhd" target="_blank">Дизайн</a>
+                        <a href="#">Безопасность</a>
+                    </nav>
+                </div>
+            </div>
+           </footer>
+
+    </div>
+
+<script src="js/script.js"></script>
+<script src="js/dollars.js"></script>
+<script src="js/preloader.js"></script>
+</body>
+</html>
