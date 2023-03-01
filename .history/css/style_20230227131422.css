@@ -85,7 +85,7 @@ a {
 }
 
 .header {
-  padding: 15px 0px;
+  padding: 30px 0px;
   position: fixed;
   top: 0;
   left: 0;
@@ -913,39 +913,6 @@ a {
   outline: 0;
   border: 0;
 }
-.payment__card.requis .forms .forms-info .form-input-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-.payment__card.requis .forms .forms-info .form-input-bottom .form-date {
-  width: 40%;
-  padding: 5px;
-  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
-  border-radius: 20px;
-}
-.payment__card.requis .forms .forms-info .form-input-bottom .form-date input {
-  width: 100%;
-  border-radius: 20px;
-  border: 0;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 5px 0px;
-  color: #000000;
-  padding-left: 10px;
-}
-.payment__card.requis .forms .forms-info .form-input-bottom .form-date input::-moz-placeholder {
-  text-align: center;
-  color: #000000;
-}
-.payment__card.requis .forms .forms-info .form-input-bottom .form-date input::placeholder {
-  text-align: center;
-  color: #000000;
-}
 .payment__card.requis .link-btn {
   display: block;
   max-width: 300px;
@@ -1118,7 +1085,7 @@ a {
 }
 
 .information {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .information__title {
   position: relative;
@@ -1143,139 +1110,6 @@ a {
   position: absolute;
   top: 0px;
   left: 0;
-  left: 50px;
-  transform: scaleX(1);
-}
-.information__text p {
-  margin-top: 35px;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 30px;
-  color: #C8C8C8;
-}
-.information__text p span {
-  margin-left: 20px;
-}
-
-.safety .information__title {
-  position: relative;
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: center;
-}
-.safety .information__title h2 {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #FFFFFF;
-}
-.safety .information__title::after {
-  content: "";
-  width: 18px;
-  height: 30px;
-  background: linear-gradient(354.08deg, #000000 -360.38%, rgba(255, 255, 255, 0) 119.53%), #131313;
-  border-radius: 20px;
-  position: absolute;
-  top: 0px;
-  left: -30px;
-  transform: scaleX(1);
-}
-.safety span {
-  text-transform: uppercase;
-  color: white;
-  font-weight: 700;
-}
-
-.help {
-  margin-top: 50px;
-}
-.help__title {
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.help__title h2 {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #FFFFFF;
-}
-.help__title:after {
-  content: "";
-  width: 18px;
-  height: 30px;
-  background: linear-gradient(354.08deg, #000000 -360.38%, rgba(255, 255, 255, 0) 119.53%), #131313;
-  border-radius: 20px;
-  position: absolute;
-  top: 0px;
-  left: 0;
   left: -20px;
   transform: scaleX(1);
-}
-.help__form {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-.help__form h4 {
-  text-align: center;
-}
-.help__form .form {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-.help__form .form .input-form {
-  margin-top: 20px;
-  padding: 5px;
-  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
-  border-radius: 20px;
-}
-.help__form .form input,
-.help__form .form textarea {
-  width: 100%;
-  padding: 5px;
-  width: 100%;
-  border-radius: 20px;
-  border: 0;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-  padding: 5px 0px;
-  padding-left: 20px;
-}
-.help__form .form textarea {
-  resize: none;
-}
-.help__form .form input:focus,
-.help__form .form textarea:focus {
-  outline: 0;
-  border: 0;
-}
-.help__form .form .send {
-  display: block;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-  background: linear-gradient(95.21deg, #0085FF 16.28%, rgba(255, 255, 255, 0) 139.19%), #FF00E5;
-  border-radius: 7px;
-  color: #FFFFFF;
-  padding: 12px 20px;
-  max-width: 270px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-  border: 0;
-  cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230227131422.css.map */

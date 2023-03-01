@@ -76,9 +76,3 @@ requisDate.addEventListener('input',   () => {
 
 
 // cvv
-const requisCvv = document.querySelector('.requiscvv');
-requisCvv.addEventListener('input',   () => {
-    if (requisCvv.value.length > 3) {
-      requisCvv.value = requisCvv.value.slice(0, 3);
-    }
-  });

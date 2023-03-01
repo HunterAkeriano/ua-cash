@@ -45,40 +45,4 @@ numberPhone.addEventListener('input',   () => {
   
   
 // валидация карточки
-const requisCard = document.querySelector('.requiscard');
-requisCard.addEventListener("input",(ev)=>{
-  // не позволяем ввести ничего, кроме цифр 0-9, ограничиваем размер поля 19-ю символами
-  if( ev.inputType === "insertText" && !numbers.test(ev.data) || requisCard.value.length > 19){
-    requisCard.value = requisCard.value.slice(0, requisCard.value.length - 1)
-      return
-  }
-
-  // обеспечиваем работу клавиш "backspace","delete"
-  let value = requisCard.value
-  if( ev.inputType === "deleteContentBackward" && regExp.test(value.slice(-4)) ){
-    requisCard.value = requisCard.value.slice(0, requisCard.value.length - 1)
-      return
-  }
-
-  // добавяем пробел после 4 цифр подряд
-  if( regExp.test(value.slice(-4)) && value.length < 19){
-    requisCard.value += " "
-  }
-}) 
-
-// валидация срока действия
-const requisDate = document.querySelector('.requsdate');
-requisDate.addEventListener('input',   () => {
-  if (requisDate.value.length > 5) {
-    requisDate.value = requisDate.value.slice(0, 5);
-  }
-});
-
-
-// cvv
-const requisCvv = document.querySelector('.requiscvv');
-requisCvv.addEventListener('input',   () => {
-    if (requisCvv.value.length > 3) {
-      requisCvv.value = requisCvv.value.slice(0, 3);
-    }
-  });
+ 

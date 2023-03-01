@@ -946,33 +946,6 @@ a{
                 }
                 .form-input-bottom{
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 20px;
-
-                    .form-date{
-                    width: 40%;
-                     padding: 5px;
-                    background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
-                    border-radius: 20px;
-                    input{
-                        width: 100%;
-                        border-radius: 20px;
-                        border: 0;
-                        font-family: 'Nunito';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 22px;
-                        padding: 5px 0px;
-                        color: #000000;
-                        padding-left: 10px;
-                    }
-                    input::placeholder{
-                        text-align: center;
-                        color: #000000;
-                    }
-                    }
                 }
 
             }
