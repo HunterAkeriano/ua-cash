@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"  href="img/favicon/Favicon.png"/>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <!-- мета теги -->
+    <meta property="og:title" content="UA-Cash" />
+    <meta property="og:site_name" content="Главна"/>
+    <meta property="og:description" content="UA-Cash лучшая система для онлайн-переводов по Украине" />
+    <meta property="og:image" content="https://hunterakeriano.github.io/ua-cash/img/registr/bitcoin.png" />
+
+
+    <!-- стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/btn-reg.css">
+    <link rel="stylesheet" href="css/animation-btn.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--  -->
+
+
+    <!-- Заголовок страницы -->
+    <title>Ua Cash</title>
+</head>
+<body>
+    <!-- preloader -->
+   <div id="page-preloader" class="preloader">
+    
+    <div class="loader">
+        <div class="preloader-photo">
+            <img src="img/favicon/Favicon.png" alt="">
+        </div>
+        <span id="load_perc">0%</span></div>
+   </div>
+    
+    <div class="page">
+
+        <!-- шапка сайта -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+
+                    <!-- burger -->
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <!-- ccылки -->
+                    <nav class="header__content-nav">
+                        <a href="index.html">Главная</a>
+                        <a href="#posugi">Услуги</a>
+                        <a href="about.html#info">О нас</a>
+                        <a href="support.html">Поддержка </a>
+                    </nav>
+
+                    <!-- авторизация -->
+                    <div class="header__content-auth">
+                        <a href="auth.html">Личный кабинет</a>
+                        <img src="img/header/ava.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+   <!-- content -->
+
+   
+   <section class="dollars">
+    <div class="container">
+        <div class="dollars__content">
+            <div class="dol-date"><span id="date-date-date"></span></div>
+            <div class="dol-block">
+                <!-- значки тут заменить -->
+                <div>
+                    <img src="img/icons/usa.png" alt="">
+                <span id="usd-rate"></span>
+                </div>
+                 <div>
+                <img src="img/icons/eu.png" alt="">
+                <span id="eur-rate"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   
+   <section class="content">
+    <div class="container">
+        <div class="content__text">
+            <h1><span> UaCash </span> - Лучший помощник</h1>
+            <p>Мы открылись чтобы доказать что
+                моментальные переводы 
+                существуют!</p>
+        </div>
+        <div class="content__btn">
+            <a class="one btn-animtion" href="#posugi">Услуги</a>
+            <a class="two" href="about.html#info">Подробнее о сайте</a>
+        </div>
+        
+    </div>
+   </section>
+
+   <!-- поиск -->
+   <div class="search">
+    <div class="container">
+        <div class="search__input">
+            <input class="searchInput" type="search" placeholder="Поиск услуги">
+        </div>
+    </div>
+    
+   </div>
+   
+
+   <section class="swiper swiper-palnsh" id="posugi">
+    <div class="container">
+        <div class="swiper__text">
+            <h2>Услуги сервиса</h2>
+        </div>
+
+        
+            <div class="swiper-container swiper-planshet">
+                <div class="swiper-wrapper searchBlock">
+                <div class="swiper-slide one  item">
+                    <div class="img-block">
+                        <img src="img/swiper/Group 128.svg" alt="">
+                    </div>
+                    <h3>Card to Card</h3>
+                    <h5>Перевод с карты на карту</h5>
+                    <p class="text-text">Перевод средств с карты на карту осуществляется
+                         с помощью соответсвенных сервисов, 
+                         и сохранением конфидициальности данных</p>
+                         <div class="input-card two-text">
+                            <input class="cardcard card-valid" type="text" placeholder="Номер карты получателя" id="card-card">
+                         </div>
+                         <div class="input-sum">
+                            <input class="max-sum input-cards" type="number" max="5000" placeholder="Сумма"  id="card-inp">
+                         </div>
+                         <a id="btn-card" href="#card" >Перевести <span class="card-span" id="card-span"></span> </a>
+                         <p class="text-info">
+                            На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
+                         </p>
+                        </div>
+
+                        <div class="swiper-slide two item">
+                            <h3>Paymount to Phone</h3>
+                            <h5>Быстрое пополнение счета</h5>
+                            <p class="text-text ">Пополнение мобильного счета
+                                производиться непосредственно
+                                в оперативном порядке,  средства приходят менее чем за минуту</p>
+                                 <div class="input-card two-text">
+                                    <input class="phone-inp " type="tel" maxlength="12" placeholder="Номер телефона получателя">
+                                 </div>
+                                 <div class="input-sum">
+                                    <input class="phone-sum max-sum" type="number"placeholder="Сумма" >
+                                 </div>
+                                 <a class="btn-phone" href="#phone">Перевести <span  class="phone-span"></span> </a>
+                                 <p class="text-info">
+                                    На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
+                                 </p>
+                                </div>
+
+                                <div class="swiper-slide back three item">
+                                    <h3>Paymount To Requisites
+                                    </h3>
+                                    <h5>Перевод по реквизитам</h5>
+                                    <p class="text-text">Моментальный перевод непосредственно по реквзитам в оперативном порядке в соотвествии с нормами </p>
+                                         <div class="input-card two-text">
+                                            <input class="card-valid requis-input-card" type="text" placeholder="Номер карты отправителя">
+                                         </div>
+                                         <div class="input-sum">
+                                            
+                                            <input class="requis-input max-sum" type="number"placeholder="Сумма" >
+                                         </div>
+                                         <a class="requis-btn" href="#requis">Перевести <span class="requis-span"></span> </a>
+                                         <p class="text-info">
+                                            На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
+                                         </p>
+                                        </div>
+                                        
+                                        <div class="swiper-slide back four item">
+                                    <h3>Support ЗСУ
+                                    </h3>
+                                    <h5>Поддержка Армии Украины</h5>
+                                    <p class="text-text">Сбор средств на поддержку украинской армии (перевод на спецсчет НБУ</p>
+                                         <div class="input-card two-text" >
+                                            <input class="card-valid zsu-card-inp" id="bank-card-input" type="text" placeholder="Номер карты отправителя">
+                                         </div>
+                                         <div class="input-sum">
+                                            <input class="zsu-input-sum max-sum"  type="number"placeholder="Сумма" >
+                                         </div>
+                                         <a class="zsu-btn" href="#zsu">Перевести <span class="zsu-span"> </span></a>
+                                         <p class="text-info">
+                                            На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ
+                                         </p>
+                                        </div>
+                
+            </div>
+        </div>
+    </div>
+   </section>
+   
+
+
+
+
+   <!-- регистрация -->
+
+   <section class="reg">
+    <div class="reg__left">
+       
+    </div>
+    <div class="reg__right">
+        <div class="reg__container">
+            <div class="forms">
+
+                <!-- форма для регистрации -->
+            
+                <form action="php/handlers/hand_butt.php" method="POST">
+                <h3>Зарегистрироваться</h3>
+                <div class="inp">
+                    <input name="sign_up_login" type="email" placeholder="e-mail" required>
+                </div>
+                <div class="inp">
+                    <input  name="sign_up_password" type="password" placeholder="Пароль" required>
+                </div>
+                <div class="inp sec">
+                    <input name="code_verb"  name="sign_up_password" type="text" placeholder="Секретное слово" required>
+                </div>
+
+
+                <!-- для формы заменить ссылку на кнопку,
+                делаю как костыль для показа -->
+                <div class="btn">
+                    <button class="btn-animtion" name="sign_up_button" type="submit">Зарегистрироваться</button>
+                    <button name="sign_in_button" type="submit">Вход</button>
+                </div>
+                
+            </form>
+        </div>
+
+        </div>
+    </div>
+   </section>
+
+
+   <!-- пеймент -->
+   <section class="payment">
+    <div class="container">
+        <!-- переводы на карту -->
+        <div class="payment__card" id="card">
+            <div class="payment__card-text">
+                <h3>Перевод с карты на карту</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="php/handlers/hand_butt.php" method="POST">
+                    <div class="form">
+                        <div class="form-left">
+                            <div class="form-input-top">
+                                <input class="cardresult card-valid" type="sting" placeholder="Номер карты отправителя" id="validation-input-card" >
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="date-card card-date date-card-all" type="text" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input class="card-cvv all-cvv" type="password" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input type="text" placeholder="Номер карты получателя" class="user-cars card-valid">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="cardsum max-sum" type="number" placeholder="Сумма">
+                                </div>
+                            </div>
+                            <a class="btn-animtion"  href="#">Перевести <span class="card-span-usr"></span></a>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/card.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Перевод с карты на карту</h5>
+                        <p class="text">Перевод средств с карты на карту осуществляется с помощью соответсвенных сервисов, и сохранением конфидициальности данных</p>
+                        <p class="info">На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- переводы на телефон -->
+        <!-- тут блок просто перевернутый в стилях -->
+        <div class="payment__card phone" id="phone">
+            <div class="payment__card-text">
+                <h3>Пополнение мобильного</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="php/handlers/hand_butt.php" method="POST">
+                    <div class="form">
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input class="card-phone card-valid" type="text" placeholder="Номер карты отправителя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="date-phone card-date date-card-all" type="text" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input class="phone-cvv all-cvv" type="password" placeholder="CVV">
+                                </div>
+                            </div>
+                            <a class="btn-animtion" href="#">Перевести <span class="user-span-phone"></span> </a>
+                        </div>
+                        <div class="form-left ">
+                            <div class="form-input-top">
+                                <input class="user-inst" type="tel" maxlength="12" placeholder="Номер телефона получателя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="user-phone-sum max-sum" type="number" placeholder="Сумма">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/hone.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Быстрое пополнение счета</h5>
+                        <p class="text">Пополнение мобильного счета
+                            производиться непосредственно
+                            в оперативном порядке, средства приходят менее чем за минуту </p>
+                        <p class="info">На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <!-- переводы по реквезитам -->
+        <div class="payment__card requis" id="requis">
+            <div class="payment__card-text">
+                <h3>Перевод по реквизитам</h3>
+            </div>
+            <form action="php/handlers/hand_butt.php" method="POST">
+                <div class="forms">
+                    <div class="forms-info">
+                        <div class="text">
+                            <h5>Получатель</h5>
+                            
+                        </div>
+                        <div class="form-input">
+                            <input type="number" placeholder="Введите ЕГРПОУ или РНУКПН">
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="Введите Название получателя">
+                        </div>
+                        <div class="form-input">
+                            <input type="number" placeholder="Введите счет IBAN">
+                        </div>
+                    </div>
+                    <div class="forms-info">
+                        <div class="text">
+                            <h5>Отправитель</h5>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="ФИО отправителя">
+                        </div>
+                        <div class="form-input">
+                            <input class="requis-phone" type="number" placeholder="Номер телефона">
+                        </div>
+                        <div class="form-left">
+                            <div class="form-input-top">
+                                <input class="cardresult requiscard card-valid" type="sting" placeholder="Номер карты отправителя" id="validation-input-card" >
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="date-card card-date requsdate date-card-all" type="text" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input class="card-cvv requiscvv all-cvv" type="password" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-input inp-last">
+                            <input  class="inp-last-sim max-sum requis-sum" type="number" placeholder="Сумма">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <a class="link-btn btn-animtion" href="#">Перевести <span class="link-span requis-span-result"></span> </a>
+
+            <div class="payment__card-info">
+                <div class="block-img">
+                    <img src="img/payment/requs.png" alt="">
+                </div>
+                <div class="block-text">
+                    <h5>Перевод по реквизитам</h5>
+                    <p class="text">Моментальный перевод непосредственно по реквзитам в оперативном порядке в соотвествии с нормами  </p>
+                    <p class="info">На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- поддержка зсу -->
+
+        <div class="payment__card phone zsu " id="zsu">
+            <div class="payment__card-text">
+                <h3>Поддержка ЗСУ</h3>
+            </div>
+            <div class="payment__card-form">
+                <!-- форма для отправки данных карточки -->
+                <form action="php/handlers/hand_butt.php" method="POST">
+                    <div class="form">
+                        <div class="form-left top">
+                            <div class="form-input-top">
+                                <input class="inp-zsu card-valid" type="text" placeholder="Номер карты отправителя">
+                            </div>
+                            <div class="form-input-bottom">
+                                <div class="form-date">
+                                    <input class="date-phone card-date date-card-all" type="text" placeholder="Срок дейстсвия">
+                                </div>
+                                <div class="form-date">
+                                    <input class="phone-cvv all-cvv" type="password" placeholder="CVV">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-left ">
+                            <div class="form-input-bottom">
+                                <div class="form-date" style="width: 100%;">
+                                    <input class="zsu-sum max-sum" type="number" placeholder="Сумма">
+                                </div>
+                            </div>
+                            <a class="btn-animtion" href="#">Перевести <span class="result-zsu"></span> </a>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="payment__card-info">
+                    <div class="block-img">
+                        <img src="img/payment/zsu.png" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Поддержка Армии Украины</h5>
+                        <p class="text">Сбор средств на поддержку украинской армии (перевод на спецсчет НБУ) </p>
+                        <p class="info">На нашем сервисе взымается комиссия 2.5% + 3uah к сумме.25% От прибыли мы отправляем на поддержку ЗСУ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   </section>
+
+
+   <!-- footer -->
+
+   <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <h5>UACASH</h5>
+            <a class="btn-animtion" href="#posugi">Услуги</a>
+        </div>
+        <div class="footer__content">
+            <nav class="nav__link">
+                <a href="index.html">Главная</a>
+                <a href="https://t.me/uacash_news" target="_blank">Новости</a>
+               <a href="https://t.me/uacash_public" target="_blank">Сообщество</a>
+               <a href="about.html#info">О нас</a>
+            </nav>
+            <nav class="nav__link">
+                <a href="support.html">Поддержка </a>
+                <a href="#">Договор</a>
+                <a href="https://t.me/lvkhd" target="_blank">Дизайн</a>
+                <a href="safety.html#safety">Безопасность</a>
+            </nav>
+        </div>
+    </div>
+   </footer>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <!-- вычисление максимальной суммы и процентов -->
+    <script src="js/maks-sum.js"></script>
+   <script src="js/view.js"></script>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/validation-card.js"></script>
+    <script src="js/dollars.js"></script>
+    <script src="js/preloader.js"></script>
+   <script src="js/search.js"></script>
+    
+    <!--  -->
+</body>
+</html>

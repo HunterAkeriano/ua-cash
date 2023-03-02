@@ -181,17 +181,16 @@ a {
 }
 .dollars__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
-.dollars__content .dol-block div {
-  display: flex;
-  align-items: center;
+.dollars__content .dol-block table, .dollars__content .dol-block tr, .dollars__content .dol-block td {
+  border: 1px solid white;
+  border-collapse: collapse;
 }
-.dollars__content .dol-block div img {
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
+.dollars__content .dol-block td {
+  padding: 7px;
+  text-align: center;
 }
 
 .content {
